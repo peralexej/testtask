@@ -182,11 +182,6 @@ public class EconomicCalendarTestSteps extends EconomicCalendarView {
         openCalendar();
     }
 
-    @And("Switch to frame num {int}")
-    public void switchToFrameNum(int num) {
-        getWebDriver().switchTo().frame(num);
-    }
-
     @Then("Check that page is displayed")
     public void checkThatPageIsDisplayed() {
         assertTrue(isPageLogoDisplayed());

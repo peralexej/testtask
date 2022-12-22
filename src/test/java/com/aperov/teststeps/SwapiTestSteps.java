@@ -74,7 +74,7 @@ public class SwapiTestSteps {
                 .extract()
                 .jsonPath()
                 .getList("pilots");
-        String characterUrl = pilotsList.stream()
+        pilotsList.stream()
                 .filter(url -> {
                     String name = given().when().get(url).then().extract().jsonPath().get("name");
                     return name.equals(characterName);

@@ -14,7 +14,6 @@ import static com.codeborne.selenide.Selenide.$x;
  */
 public class XMContainer {
     public final SelenideElement cookiesModal = $x("//div[@class='cookie-modal__defaultBlock']");
-    public final SelenideElement navRoot = $x(("//*[@id='main-nav']"));
     public final SelenideElement cookiesAcceptBtn = $x("//button[contains(@class, 'js-acceptDefaultCookie')]");
 
 
